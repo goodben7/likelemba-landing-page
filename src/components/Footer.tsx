@@ -1,5 +1,4 @@
-import React from 'react';
-import { Smartphone, Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Instagram } from 'lucide-react';
+import { Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Instagram } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -10,9 +9,7 @@ const Footer = () => {
           {/* Brand Section */}
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-3 mb-6">
-              <div className="w-12 h-12 bg-gradient-to-r from-yellow-400 to-yellow-600 rounded-xl flex items-center justify-center">
-                <Smartphone className="w-7 h-7 text-white" />
-              </div>
+              <img src="/assets/images/logo.png" alt="Likelemba Logo" className="w-14 h-14 object-contain" />
               <span className="text-3xl font-bold">Likelemba</span>
             </div>
             <p className="text-gray-300 text-lg mb-6 leading-relaxed max-w-md">
@@ -85,8 +82,7 @@ const Footer = () => {
         <div className="border-t border-gray-800 py-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-gray-400 text-center md:text-left">
-              <p>&copy; 2024 Likelemba. Tous droits réservés.</p>
-              <p className="text-sm mt-1">Fait avec ❤️ pour la communauté congolaise</p>
+              <p>&copy; {new Date().getFullYear()} Likelemba. Tous droits réservés.</p>
             </div>
             
             <div className="flex items-center space-x-6">
@@ -95,7 +91,7 @@ const Footer = () => {
                 <span className="text-sm text-gray-400">Service opérationnel</span>
               </div>
               <div className="text-sm text-gray-400">
-                Version 2.1.0
+                Version 1.1.0
               </div>
             </div>
           </div>

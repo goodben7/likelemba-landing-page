@@ -1,5 +1,4 @@
-import React from 'react';
-import { Download, UserPlus, ArrowRight, Smartphone } from 'lucide-react';
+import { Download, UserPlus, ArrowRight, Smartphone, Shield, Users } from 'lucide-react';
 
 const CTA = () => {
   return (
@@ -17,15 +16,20 @@ const CTA = () => {
             <Smartphone className="w-10 h-10 text-white" />
           </div>
           
-          <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
-            Prêt à révolutionner 
+          <h2 className="text-4xl lg:text-5xl font-bold text-white mb-4 leading-tight">
+            Transformez votre avenir financier
             <br />
-            votre épargne ?
+            <span className="text-yellow-100">dès aujourd'hui</span>
           </h2>
           
-          <p className="text-xl text-yellow-100 mb-8 max-w-2xl mx-auto leading-relaxed">
-            Rejoignez des milliers de Congolais qui font déjà confiance à Likelemba pour gérer 
-            leurs tontines en toute sécurité.
+          <p className="text-xl text-yellow-50 mb-4 max-w-2xl mx-auto leading-relaxed">
+            Rejoignez la communauté Likelemba et découvrez comment des milliers de Congolais
+            sécurisent leur avenir financier ensemble.
+          </p>
+          
+          <p className="text-lg text-yellow-100 mb-8 font-medium">
+            <span className="bg-white bg-opacity-20 px-3 py-1 rounded-full inline-block mb-2 mr-2">Sans frais cachés</span>
+            <span className="bg-white bg-opacity-20 px-3 py-1 rounded-full inline-block mb-2">Accès 24/7</span>
           </p>
 
           {/* CTA Buttons */}
@@ -45,14 +49,23 @@ const CTA = () => {
           {/* Trust Indicators */}
           <div className="grid grid-cols-3 gap-8 max-w-lg mx-auto">
             <div className="text-center">
+              <div className="flex items-center justify-center mb-2">
+                <Users className="w-6 h-6 text-yellow-100 mr-2" />
+              </div>
               <div className="text-3xl font-bold text-white mb-1">1000+</div>
               <div className="text-yellow-100 text-sm">Utilisateurs</div>
             </div>
             <div className="text-center">
+              <div className="flex items-center justify-center mb-2">
+                <Users className="w-6 h-6 text-yellow-100 mr-2" />
+              </div>
               <div className="text-3xl font-bold text-white mb-1">50+</div>
               <div className="text-yellow-100 text-sm">Groupes actifs</div>
             </div>
             <div className="text-center">
+              <div className="flex items-center justify-center mb-2">
+                <Shield className="w-6 h-6 text-yellow-100 mr-2" />
+              </div>
               <div className="text-3xl font-bold text-white mb-1">99.9%</div>
               <div className="text-yellow-100 text-sm">Sécurité</div>
             </div>

@@ -1,4 +1,3 @@
-import React from 'react';
 import { Download, UserPlus, ArrowRight } from 'lucide-react';
 
 const Hero = () => {
@@ -55,7 +54,7 @@ const Hero = () => {
               <div className="w-80 h-96 bg-gray-900 rounded-3xl p-4 shadow-2xl transform rotate-3 hover:rotate-0 transition-transform duration-500">
                 <div className="w-full h-full bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-2xl flex items-center justify-center">
                   <img 
-                    src="https://images.pexels.com/photos/5935791/pexels-photo-5935791.jpeg?auto=compress&cs=tinysrgb&w=600" 
+                    src="/assets/images/img-1.jpeg" 
                     alt="Likelemba App Interface"
                     className="w-full h-full object-cover rounded-2xl"
                   />
